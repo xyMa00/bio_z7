@@ -1,31 +1,43 @@
+<!---
 [![Stars](https://img.shields.io/github/stars/jsxlei/SCALE?logo=GitHub&color=yellow)](https://github.com/jsxlei/scale/stargazers)
 [![PyPI](https://img.shields.io/pypi/v/scale-atac.svg)](https://pypi.org/project/scale-atac)
 [![Downloads](https://pepy.tech/badge/scale-atac)](https://pepy.tech/project/scale-atac)
-# Single-Cell ATAC-seq analysis via Latent feature Extraction
-![](https://github.com/jsxlei/SCALE/wiki/png/model.png)
+-->
+# Res-ATACseq: A single-cell ATAC-seq assay based on latent feature extraction
+<!---
+#![](https://github.com/jsxlei/SCALE/wiki/png/model.png)
+-->
 
+<img src="https://github.com/xyMa00/bio_z7/blob/main/Res_ATACseq_all/png/RES_ATACseq_model.png" width="500px">
+
+<!---
 ## News 
 2021.04    A new online integration tool [SCALEX](https://github.com/jsxlei/SCALEX) on scRNA-seq and scATAC-seq is available!  
 2021.03.23 Introduce the highly_variable_genes from scanpy to filter peaks  
 2021.01.14 Update to compatible with [h5ad](https://anndata.readthedocs.io/en/latest/anndata.AnnData.html) file and [scanpy](https://scanpy.readthedocs.io/en/stable/index.html)
-
+-->
 ## Installation  
 
-SCALE neural network is implemented in [Pytorch](https://pytorch.org/) framework.  
-Running SCALE on CUDA is recommended if available.   
+Res-ATACseq neural network is implemented in [Pytorch](https://pytorch.org/) framework.  
+Running Res-ATACseq on CUDA is recommended if available.   
 
 #### install from PyPI
-
+<!---
     pip install scale
-	
+-->	
 #### install latest develop version from GitHub
-
+<!---
 	pip install git+https://github.com/jsxlei/SCALE.git
-
+-->	
+    pip install https://github.com/xyMa00/bio_z7.git
 or download and install
-
+<!---
 	git clone git://github.com/jsxlei/SCALE.git
 	cd SCALE
+	python setup.py install
+-->		
+	git clone git@github.com:xyMa00/bio_z7.git
+	cd Res_ATACseq_all
 	python setup.py install
     
 Installation only requires a few minutes.  
@@ -86,19 +98,23 @@ Use functions in SCALE packages.
 	from scale.utils import *
 	
 #### Running time
+<!---
 <p float="left">
   <img src="https://github.com/jsxlei/SCALE/wiki/png/runtime.png" width="350" />
   <img src="https://github.com/jsxlei/SCALE/wiki/png/memory.png" width="350" /> 
 </p>
-
+-->
 
 ## Tutorial
 
-
+<!---
 **[Tutorial Forebrain](https://github.com/jsxlei/SCALE/wiki/Forebrain)**   Run SCALE on dense matrix **Forebrain** dataset (k=8, 2088 cells)
+-->
 
+**[Tutorial Forebrain](https://github.com/xyMa00/bio_z7/tree/main/Res_ATACseq_all)**   Run SCALE on dense matrix **Forebrain** dataset (k=8, 2088 cells)
 
 #### Data availability  
+<!---
 * [Forebrain](http://zhanglab.net/SCALE_SOURCE_DATA/Forebrain.h5ad)
 * [Splenocyte](http://zhanglab.net/SCALE_SOURCE_DATA/Splenocyte.h5ad)
 * [mouse_atlas](http://zhanglab.net/SCALE_SOURCE_DATA/mouse_atlas.h5ad)
@@ -107,7 +123,10 @@ Use functions in SCALE packages.
 * [GM12878vsHEK](http://zhanglab.net/SCALE_SOURCE_DATA/GM12878vsHEK.h5ad)
 * [GM12878vsHL](http://zhanglab.net/SCALE_SOURCE_DATA/GM12878vsHL.h5ad)
 * [Breast_Tumor](http://zhanglab.net/SCALE_SOURCE_DATA/Breast_Tumor.h5ad)
-
+[Lei Xiong, Kui Xu, Kang Tian, Yanqiu Shao, Lei Tang, Ge Gao, Michael Zhang, Tao Jiang & Qiangfeng Cliff Zhang. SCALE method for single-cell ATAC-seq analysis via latent feature extraction. Nature Communications, (2019).](https://www.nature.com/articles/s41467-019-12630-7)
+-->
 
 ## Reference
+<!---
 [Lei Xiong, Kui Xu, Kang Tian, Yanqiu Shao, Lei Tang, Ge Gao, Michael Zhang, Tao Jiang & Qiangfeng Cliff Zhang. SCALE method for single-cell ATAC-seq analysis via latent feature extraction. Nature Communications, (2019).](https://www.nature.com/articles/s41467-019-12630-7)
+-->
