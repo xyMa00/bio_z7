@@ -63,10 +63,18 @@ Installation only requires a few minutes.
     SCALE.py -d [input]
 
 #### Output
+<!---
 Output will be saved in the output folder including:
 * **model.pt**:  saved model to reproduce results cooperated with option --pretrain
 * **adata.h5ad**:  saved data including Leiden cluster assignment, latent feature matrix and UMAP results.
 * **umap.pdf**:  visualization of 2d UMAP embeddings of each cell
+-->	
+Output will be saved in the output folder including:
+* **model.pt**:  saved model to reproduce results cooperated with option --pretrain
+* **tsne_louvain.png**:  clustering result of louvain by tsne.
+* **umap_louvain.png**:  clustering result of louvain by umap.
+* **tsne_leiden.png**:  clustering result of leiden by tsne.
+* **umap_leiden.png**:  clustering result of leiden by umap.
 
 #### Imputation  
 Get binary imputed data in adata.h5ad file using scanpy **adata.obsm['binary']** with option **--binary** (recommended for saving storage)
