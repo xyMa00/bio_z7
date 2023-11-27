@@ -8,7 +8,11 @@
 #![](https://github.com/jsxlei/SCALE/wiki/png/model.png)
 -->
 
+#![](https://github.com/xyMa00/bio_z7/blob/main/Res_ATACseq_all/png/RES_ATACseq_model.png)
+
+<!---
 <img src="https://github.com/xyMa00/bio_z7/blob/main/Res_ATACseq_all/png/RES_ATACseq_model.png" width="500px">
+-->
 
 <!---
 ## News 
