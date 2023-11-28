@@ -8,7 +8,7 @@
 #![](https://github.com/jsxlei/SCALE/wiki/png/model.png)
 -->
 
-#![](https://github.com/xyMa00/bio_z7/blob/main/Res_ATACseq_all/png/RES_ATACseq_model.png)
+#![](https://github.com/xyMa00/bio_z7/blob/main/Ressac/png/RES_ATACseq_model.png)
 
 <!---
 <img src="https://github.com/xyMa00/bio_z7/blob/main/Res_ATACseq_all/png/RES_ATACseq_model.png" width="500px">
@@ -124,7 +124,7 @@ Use functions in SCALE packages.
 **[Tutorial Forebrain](https://github.com/jsxlei/SCALE/wiki/Forebrain)**   Run SCALE on dense matrix **Forebrain** dataset (k=8, 2088 cells)
 -->
 
-**[Tutorial Forebrain](https://github.com/xyMa00/bio_z7/tree/main/Res_ATACseq_all)**   Run SCALE on dense matrix **Forebrain** dataset (k=8, 2088 cells)
+**[Tutorial Forebrain](https://github.com/xyMa00/bio_z7/tree/main/Ressac)**   Run SCALE on dense matrix **Forebrain** dataset (k=8, 2088 cells)
 
 #### Data availability  
 <!---
