@@ -102,7 +102,7 @@ def some_function(
     # device = 'cpu'
     
     print("\n**********************************************************************")
-    print(" Res_ATACseq: A single-cell ATAC-seq assay based on latent feature extraction")
+    print(" Ressac: Res base single-cell ATAC-seq clustering")
     print("**********************************************************************\n")
 
 

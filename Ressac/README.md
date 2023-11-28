@@ -3,7 +3,7 @@
 [![PyPI](https://img.shields.io/pypi/v/scale-atac.svg)](https://pypi.org/project/scale-atac)
 [![Downloads](https://pepy.tech/badge/scale-atac)](https://pepy.tech/project/scale-atac)
 -->
-# Res-ATACseq: A single-cell ATAC-seq assay based on latent feature extraction
+# Ressac: Res base single-cell ATAC-seq clustering
 <!---
 #![](https://github.com/jsxlei/SCALE/wiki/png/model.png)
 -->
@@ -116,6 +116,7 @@ Use functions in SCALE packages.
   <img src="https://github.com/jsxlei/SCALE/wiki/png/memory.png" width="350" /> 
 </p>
 -->
+
 
 ## Tutorial
 
