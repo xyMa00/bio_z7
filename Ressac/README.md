@@ -8,7 +8,7 @@
 #![](https://github.com/jsxlei/SCALE/wiki/png/model.png)
 -->
 
-#![](https://github.com/xyMa00/bio_z7/blob/main/Ressac/png/RES_ATACseq_model.png)
+#![](https://github.com/xyMa00/bio_z7/wiki/png/RES_ATACseq_model.png)
 
 <!---
 <img src="https://github.com/xyMa00/bio_z7/blob/main/Res_ATACseq_all/png/RES_ATACseq_model.png" width="500px">
@@ -30,16 +30,9 @@ Running Res-ATACseq on CUDA is recommended if available.
     pip install scale
 -->	
 #### install latest develop version from GitHub
-<!---
-	pip install git+https://github.com/jsxlei/SCALE.git
--->	
     pip install https://github.com/xyMa00/bio_z7.git
 or download and install
-<!---
-	git clone git://github.com/jsxlei/SCALE.git
-	cd SCALE
-	python setup.py install
--->		
+
 	git clone git@github.com:xyMa00/bio_z7.git
 	cd Res_ATACseq_all
 	python setup.py install
@@ -63,12 +56,6 @@ Installation only requires a few minutes.
     SCALE.py -d [input]
 
 #### Output
-<!---
-Output will be saved in the output folder including:
-* **model.pt**:  saved model to reproduce results cooperated with option --pretrain
-* **adata.h5ad**:  saved data including Leiden cluster assignment, latent feature matrix and UMAP results.
-* **umap.pdf**:  visualization of 2d UMAP embeddings of each cell
--->	
 Output will be saved in the output folder including:
 * **model.pt**:  saved model to reproduce results cooperated with option --pretrain
 * **tsne_louvain.png**:  clustering result of louvain by tsne.
