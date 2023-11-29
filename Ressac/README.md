@@ -3,7 +3,7 @@
 [![PyPI](https://img.shields.io/pypi/v/scale-atac.svg)](https://pypi.org/project/scale-atac)
 [![Downloads](https://pepy.tech/badge/scale-atac)](https://pepy.tech/project/scale-atac)
 -->
-# Ressac: Res base single-cell ATAC-seq clustering
+# Ressac: Resnet based single-cell ATAC-seq clustering
 
 #![](https://github.com/xyMa00/bio_z7/wiki/png/RES_ATACseq_model.png)
 
@@ -109,6 +109,7 @@ Use functions in SCALE packages.
 **[Tutorial Forebrain](https://github.com/xyMa00/bio_z7/wiki/Forebrain)**   Run SCALE on dense matrix **Forebrain** dataset (k=8, 2088 cells)
 
 #### Data availability  
+
 <!---
 * [Forebrain](http://zhanglab.net/SCALE_SOURCE_DATA/Forebrain.h5ad)
 * [Splenocyte](http://zhanglab.net/SCALE_SOURCE_DATA/Splenocyte.h5ad)
