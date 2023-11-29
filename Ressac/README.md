@@ -4,9 +4,6 @@
 [![Downloads](https://pepy.tech/badge/scale-atac)](https://pepy.tech/project/scale-atac)
 -->
 # Ressac: Res base single-cell ATAC-seq clustering
-<!---
-#![](https://github.com/jsxlei/SCALE/wiki/png/model.png)
--->
 
 #![](https://github.com/xyMa00/bio_z7/wiki/png/RES_ATACseq_model.png)
 
@@ -14,21 +11,16 @@
 <img src="https://github.com/xyMa00/bio_z7/blob/main/Res_ATACseq_all/png/RES_ATACseq_model.png" width="500px">
 -->
 
-<!---
-## News 
-2021.04    A new online integration tool [SCALEX](https://github.com/jsxlei/SCALEX) on scRNA-seq and scATAC-seq is available!  
-2021.03.23 Introduce the highly_variable_genes from scanpy to filter peaks  
-2021.01.14 Update to compatible with [h5ad](https://anndata.readthedocs.io/en/latest/anndata.AnnData.html) file and [scanpy](https://scanpy.readthedocs.io/en/stable/index.html)
--->
+
 ## Installation  
 
-Res-ATACseq neural network is implemented in [Pytorch](https://pytorch.org/) framework.  
-Running Res-ATACseq on CUDA is recommended if available.   
+Ressac neural network is implemented in [Pytorch](https://pytorch.org/) framework.  
+Running Ressac on CUDA is recommended if available.   
 
 #### install from PyPI
-<!---
-    pip install scale
--->	
+
+    pip install Ressac
+
 #### install latest develop version from GitHub
     pip install https://github.com/xyMa00/bio_z7.git
 or download and install
@@ -38,6 +30,14 @@ or download and install
 	python setup.py install
     
 Installation only requires a few minutes.  
+
+## Data preprocessing
+* First, you can filter based on cells or peaks.
+* Second, you can choose to keep the most variable features.
+* Third, the final number of retained peaks should be the square of some number.
+
+You can refer to **Peaks_fliter_all.py** for the whole process.
+
 
 ## Quick Start
 
@@ -76,10 +76,9 @@ or get numerical imputed data in adata.h5ad file using scanpy **adata.obsm['impu
 * save results in a specific folder: [-o] or [--outdir] 
 * embed feature by tSNE or UMAP: [--embed]  tSNE/UMAP
 * filter low quality cells by valid peaks number, default 100: [--min_peaks] 
-* filter low quality peaks by valid cells number, default 3: [--min_cells]
-* filter peaks by selecting highly variable features, default 100,000: [--n_feature], disable by [--n_feature] -1.
-* modify the initial learning rate, default is 0.002: [--lr]  
-* change iterations by watching the convergence of loss, default is 30000: [-i] or [--max_iter]  
+* filter low quality peaks by valid cells number, default 5: [--min_cells]
+* filter peaks by selecting highly variable features, default 10%: [--n_feature], disable by [--n_feature] -1.
+* modify the initial learning rate, default is 0.001: [--lr]  
 * change random seed for parameter initialization, default is 18: [--seed]
 * binarize the imputation values: [--binary]
 	
@@ -107,11 +106,7 @@ Use functions in SCALE packages.
 
 ## Tutorial
 
-<!---
-**[Tutorial Forebrain](https://github.com/jsxlei/SCALE/wiki/Forebrain)**   Run SCALE on dense matrix **Forebrain** dataset (k=8, 2088 cells)
--->
-
-**[Tutorial Forebrain](https://github.com/xyMa00/bio_z7/tree/main/Ressac)**   Run SCALE on dense matrix **Forebrain** dataset (k=8, 2088 cells)
+**[Tutorial Forebrain](https://github.com/xyMa00/bio_z7/wiki/Forebrain)**   Run SCALE on dense matrix **Forebrain** dataset (k=8, 2088 cells)
 
 #### Data availability  
 <!---
