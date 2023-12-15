@@ -1,8 +1,5 @@
 #!/usr/bin/env python
 """
-# Author: Xiong Lei
-# Created Time : Mon 23 Apr 2018 08:26:32 PM CST
-
 # File Name: loss_function.py
 # Description:`
 

@@ -1,8 +1,5 @@
 #!/usr/bin/env python
 """
-# Author: Xiong Lei
-# Created Time : Tue 24 Apr 2018 08:05:21 PM CST
-
 # File Name: utils.py
 # Description:
 

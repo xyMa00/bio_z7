@@ -1,10 +1,8 @@
 #!/usr/bin/env python
 """
-# Author: Xiong Lei
-# Created Time : Sat 28 Apr 2018 08:31:29 PM CST
 
 # File Name: SCALE.py
-# Description: Single-Cell ATAC-seq Analysis via Latent feature Extraction.
+# Description: Resnet based single-cell ATAC-seq clustering.
     Input: 
         scATAC-seq data
     Output:
@@ -37,7 +35,7 @@ dataPath = 'find_genes_adata_forebrain_11236.h5ad'
 
 if __name__ == '__main__':
 
-    parser = argparse.ArgumentParser(description='SCALE: Single-Cell ATAC-seq Analysis via Latent feature Extraction')
+    parser = argparse.ArgumentParser(description='Ressac: Resnet based single-cell ATAC-seq clustering')
     # parser.add_argument('--data_list', '-d', type=str, nargs='+', default=[])
     parser.add_argument('--data_list', '-d', type=str, nargs='+', default=dataPath)
     # parser.add_argument('--n_centroids', '-k', type=int, help='cluster number', default=40)

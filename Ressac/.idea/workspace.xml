@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7456909-38cb-477c-85d1-34f100d4a170" name="Default Changelist" comment="" />
+    <list default="true" id="e7456909-38cb-477c-85d1-34f100d4a170" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SCALE.py" beforeDir="false" afterPath="$PROJECT_DIR$/SCALE.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scale/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/scale/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scale/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/scale/dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scale/layer.py" beforeDir="false" afterPath="$PROJECT_DIR$/scale/layer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scale/loss.py" beforeDir="false" afterPath="$PROJECT_DIR$/scale/loss.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="2YmcjP4reY0yVeYRO55T0leb4aI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -15,6 +27,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -41,6 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701134329576</updated>
       <workItem from="1701134348003" duration="299000" />
+      <workItem from="1702610756048" duration="267000" />
     </task>
     <servers />
   </component>

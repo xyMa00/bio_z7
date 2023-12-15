@@ -1,8 +1,5 @@
 #!/usr/bin/env python
 """
-# Author: Xiong Lei
-# Created Time : Mon 09 Apr 2018 07:36:48 PM CST
-
 # File Name: plotting.py
 # Description:
 

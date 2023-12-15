@@ -1,10 +1,4 @@
 #!/usr/bin/env python
-"""
-# Author: Xiong Lei
-# Created Time : Wed 26 Dec 2018 03:46:19 PM CST
-# File Name: batch.py
-# Description:
-"""
 
 import os
 import numpy as np

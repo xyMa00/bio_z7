@@ -1,8 +1,5 @@
 #!/usr/bin/env python
 """
-# Author: Xiong Lei
-# Created Time : Mon 23 Apr 2018 08:25:55 PM CST
-
 # File Name: layer.py
 # Description:
 

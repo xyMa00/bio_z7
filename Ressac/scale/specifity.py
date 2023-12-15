@@ -1,8 +1,5 @@
 #!/usr/bin/env python
 """
-# Author: Xiong Lei
-# Created Time : Thu 01 Nov 2018 04:42:30 PM CST
-
 # File Name: scale/specifity.py
 # Description:
 
