@@ -43,13 +43,10 @@ You can refer to **Peaks_fliter_all.py** for the whole process.
 
 #### Input
 * h5ad file(contains 'cell_type' in its obs).
-* **count matrix file**:  
-	* row is peak and column is barcode, in **txt** / **tsv** (sep=**"\t"**) or **csv** (sep=**","**) format
-* mtx **folder** contains **three files**:   
-	* **count file**: count in **mtx** format, filename contains key word **"count"** / **"matrix"**    
-	* **peak file**: 1-column of peaks **chr_start_end**, filename contains key word **"peak"**  
-	* **barcode file**: 1-column of barcodes, filename contains key word **"barcode"**
-* h5mu file, e.g. filename.h5mu/atac
+
+Reference run 
+
+    python epi_h5ad.py
 
 #### Run 
 
@@ -103,9 +100,20 @@ Use functions in SCALE packages.
 </p>
 -->
 
+#### How to generate the required h5ad file from the following files
+* **count matrix file**:  
+	* row is peak and column is barcode, in **txt** / **tsv** (sep=**"\t"**) or **csv** (sep=**","**) format
+* mtx **folder** contains **three files**:   
+	* **count file**: count in **mtx** format, filename contains key word **"count"** / **"matrix"**    
+	* **peak file**: 1-column of peaks **chr_start_end**, filename contains key word **"peak"**  
+	* **barcode file**: 1-column of barcodes, filename contains key word **"barcode"**
+* h5mu file, e.g. filename.h5mu/atac
+
+Reference run 
+
+    python get_h5adFile.py
 
 ## Tutorial
-
 **[Tutorial Forebrain](https://github.com/xyMa00/bio_z7/wiki/Forebrain)**   Run SCALE on dense matrix **Forebrain** dataset (k=8, 2088 cells)
 
 #### Data availability  
