@@ -42,7 +42,7 @@ You can refer to **Peaks_fliter_all.py** for the whole process.
 ## Quick Start
 
 #### Input
-* h5ad file
+* h5ad file(contains 'cell_type' in its obs).
 * **count matrix file**:  
 	* row is peak and column is barcode, in **txt** / **tsv** (sep=**"\t"**) or **csv** (sep=**","**) format
 * mtx **folder** contains **three files**:   
