@@ -12,8 +12,8 @@ class CustomEncoder(nn.Module):
         super(CustomEncoder, self).__init__()
 
         # 加载预训练的ResNet-34模型
-        # self.resnet = models.resnet34(pretrained=True)
-        self.resnet = models.resnet18(pretrained=True)
+        self.resnet = models.resnet34(pretrained=True)
+        # self.resnet = models.resnet18(pretrained=True)
 
         # 修改ResNet-34的输入通道数为1
         self.resnet.conv1 = nn.Conv2d(1, 64, kernel_size=7, stride=2, padding=3, bias=False)

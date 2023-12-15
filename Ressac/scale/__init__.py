@@ -111,7 +111,7 @@ def some_function(
     # print(data.cluster_num)
 
     # # ------------------------------------------------------------------------------------------------
-    data = ForeBrain()
+    # data = ForeBrain()
     # # -----------------------------------------------------------------------------------------------------
 
     adata, trainloader, testloader = load_dataset_new(
@@ -158,23 +158,6 @@ def some_function(
     if not pretrain:
         print('\n## Training Model ##')
         model.init_gmm_params(testloader, device)
-        # model.init_gmm_params(testloader)
-
-        # model.fit_clear(adata, trainloader, testloader, k,
-        #                 lr=lr,
-        #                 verbose=verbose,
-        #                 device=device,
-        #                 max_iter=max_iter,
-        #                 outdir=outdir
-        #                 )
-
-        # model.fit_res_sc(adata, data, trainloader, testloader, batch_size, k,
-        #               lr=lr,
-        #               verbose=verbose,
-        #               device=device,
-        #               max_iter=max_iter,
-        #               outdir=outdir
-        #               )
 
         model.fit_res_sc_b(adata, trainloader, testloader, batch_size, k,
                          lr=lr,
