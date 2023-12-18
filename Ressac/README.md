@@ -44,7 +44,7 @@ You can refer to **Peaks_fliter_all.py** for the whole process.
 #### Input
 * h5ad file(contains 'cell_type' in its obs).
 
-Reference run 
+Reference run python epi_h5ad.py to add 'cell_type'.
 
     python epi_h5ad.py
 

@@ -1,7 +1,5 @@
-#!/usr/bin/env python
 """
-
-# File Name: SCALE.py
+# File Name: Ressac.py
 # Description: Resnet based single-cell ATAC-seq clustering.
     Input: 
         scATAC-seq data
@@ -11,18 +9,14 @@
         3. imputation data
 """
 
-
 import argparse
-
 from scale import some_function
 
 # dataPath='/home/datacenter/MXY/SCALE-master/Forebrain/data.txt'
 # dataPath='GSM4648564_adipose_raw_counts.h5ad'
 # dataPath='Forebrain/data_ED.txt'
-
 # dataPath='Forebrain/data_tfidf.txt'
 # dataPath='Forebrain/tfidf_matrix_data_n.txt'
-
 # dataPath='Forebrain/data_scale.txt'
 # dataPath='Forebrain/labels.txt'
 
@@ -34,9 +28,7 @@ dataPath = 'find_genes_adata_forebrain_11236.h5ad'
 # dataPath = 'find_genes_adata_forebrain_11236_TFIDF_new_1.csv'
 
 if __name__ == '__main__':
-
     parser = argparse.ArgumentParser(description='Ressac: Resnet based single-cell ATAC-seq clustering')
-    # parser.add_argument('--data_list', '-d', type=str, nargs='+', default=[])
     parser.add_argument('--data_list', '-d', type=str, nargs='+', default=dataPath)
     # parser.add_argument('--n_centroids', '-k', type=int, help='cluster number', default=40)
     parser.add_argument('--n_centroids', '-k', type=int, help='cluster number', default=8)
@@ -57,11 +49,8 @@ if __name__ == '__main__':
     parser.add_argument('--latent', '-l',type=int, default=10, help='latent layer dim')
     parser.add_argument('--min_peaks', type=float, default=1000, help='Remove low quality cells with few peaks')
     parser.add_argument('--min_cells', type=float, default=5, help='Remove low quality peaks')
-    # parser.add_argument('--min_cells', type=float, default=5, help='Remove low quality peaks')
     parser.add_argument('--n_feature', type=int, default=100000, help='Keep the number of highly variable peaks')
-    # parser.add_argument('--n_feature', type=int, default=1000, help='Keep the number of highly variable peaks')
     parser.add_argument('--log_transform', action='store_true', help='Perform log2(x+1) transform')
-    # parser.add_argument('--max_iter', '-i', type=int, default=30000, help='Max iteration')
     parser.add_argument('--max_iter', '-i', type=int, default=30000, help='Max iteration')
     parser.add_argument('--weight_decay', type=float, default=5e-4)
     parser.add_argument('--impute', action='store_true', help='Save the imputed data in layer impute')

@@ -1,21 +1,12 @@
-#!/usr/bin/env python
-
 from .layer import *
 from .model import *
 from .loss import *
-
-
-#!/usr/bin/env python
-
-
 from .layer import *
 from .model import *
 from .loss import *
 from .dataset import load_dataset
 from .utils import estimate_k, binarization
-
 from .dataset import *
-
 
 import time
 import torch
@@ -95,16 +86,15 @@ def some_function(
     torch.manual_seed(seed)
 
     if torch.cuda.is_available(): # cuda device
-        device='cuda'
+        device = 'cuda'
         torch.cuda.set_device(gpu)
     else:
-        device='cpu'
+        device = 'cpu'
     # device = 'cpu'
     
     print("\n**********************************************************************")
     print(" Ressac: Resnet based single-cell ATAC-seq clustering")
     print("**********************************************************************\n")
-
 
     # data = LabelsFile()
     # print(len(data.labels))

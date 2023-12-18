@@ -1,8 +1,5 @@
 #!/usr/bin/env python
 """
-# Author: Xiong Lei
-# Created Time : Thu 18 Oct 2018 02:42:37 PM CST
-
 # File Name: setup.py
 # Description:
 
@@ -19,10 +16,10 @@ setup(name='scale',
       long_description='',
 
 
-      author='Lei Xiong',
-      author_email='jsxlei@gmail.com',
-      url='https://github.com/jsxlei/SCALE',
-      scripts=['SCALE.py'],
+      author='mxy',
+      author_email='xyMa00@126.com',
+      url='https://github.com/xyMa00/bio_z7.git',
+      scripts=['Ressac.py'],
       install_requires=requirements,
       python_requires='>3.6.0',
       license='MIT',
