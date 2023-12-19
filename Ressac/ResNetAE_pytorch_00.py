@@ -385,7 +385,7 @@ class ResNetVAE(torch.nn.Module):
                         torch.save(self.state_dict(), os.path.join(outdir, 'model.pt'))  # save model
                 print(f'ari_max:{ari_max}, nmi:{nmi_max}, f1:{f1_max}, epoch:{epoch_max}.\n')
         # print(f'ari_max:{ari_max},epoch:{epoch_max}.\n')
-    def fit_res_sc_b(self, adata, dataloader, dataloader_test, batch_size, k,
+    def fit_res_at_mlp(self, adata, dataloader, dataloader_test, batch_size, k,
             lr=0.002,
             weight_decay=5e-4,
             device='cpu',
@@ -645,15 +645,3 @@ class VectorQuantizer(torch.nn.Module):
 #
 #     test_input = torch.rand(10, 10, 16, 16)
 #     out = decoder(test_input)
-#
-#     a=1
-#
-#     ae = ResNetAE()
-#     out = ae(torch.rand(10, 3, 256, 256))
-#
-#     a=1
-#
-#     vae = ResNetVAE()
-#     out = vae(torch.rand(10, 3, 256, 256))
-#
-#     a=1

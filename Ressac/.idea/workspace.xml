@@ -4,9 +4,9 @@
     <list default="true" id="e7456909-38cb-477c-85d1-34f100d4a170" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCALE.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResNetAE_pytorch_00.py" beforeDir="false" afterPath="$PROJECT_DIR$/ResNetAE_pytorch_00.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epi_h5ad.py" beforeDir="false" afterPath="$PROJECT_DIR$/epi_h5ad.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scale/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/scale/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +27,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="F:/SCALE/buenrostro" />
   </component>
   <component name="RunManager">
     <configuration name="Ressac" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -81,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701134329576</updated>
       <workItem from="1701134348003" duration="299000" />
-      <workItem from="1702610756048" duration="6554000" />
+      <workItem from="1702610756048" duration="14129000" />
     </task>
     <servers />
   </component>
@@ -89,22 +89,26 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1876" height="342" key="GridCell.Tab.0.bottom" timestamp="1702863918360">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1702951351768">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="342" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1702863918360" />
-    <state width="1876" height="342" key="GridCell.Tab.0.center" timestamp="1702863918360">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1702951351768" />
+    <state width="1876" height="216" key="GridCell.Tab.0.bottom" timestamp="1702951075266">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="342" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1702863918360" />
-    <state width="1876" height="342" key="GridCell.Tab.0.left" timestamp="1702863918360">
+    <state width="1876" height="216" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1702951075266" />
+    <state width="1876" height="216" key="GridCell.Tab.0.center" timestamp="1702951075266">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="342" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1702863918360" />
-    <state width="1876" height="342" key="GridCell.Tab.0.right" timestamp="1702863918360">
+    <state width="1876" height="216" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1702951075266" />
+    <state width="1876" height="216" key="GridCell.Tab.0.left" timestamp="1702951075266">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="342" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1702863918360" />
+    <state width="1876" height="216" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1702951075266" />
+    <state width="1876" height="216" key="GridCell.Tab.0.right" timestamp="1702951075266">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="216" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1702951075266" />
     <state width="1876" height="342" key="GridCell.Tab.1.bottom" timestamp="1702863918361">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

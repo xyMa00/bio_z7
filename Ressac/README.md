@@ -1,15 +1,6 @@
-<!---
-[![Stars](https://img.shields.io/github/stars/jsxlei/SCALE?logo=GitHub&color=yellow)](https://github.com/jsxlei/scale/stargazers)
-[![PyPI](https://img.shields.io/pypi/v/scale-atac.svg)](https://pypi.org/project/scale-atac)
-[![Downloads](https://pepy.tech/badge/scale-atac)](https://pepy.tech/project/scale-atac)
--->
 # Ressac: Resnet based single-cell ATAC-seq clustering
 
 #![](https://github.com/xyMa00/bio_z7/wiki/png/RES_ATACseq_model.png)
-
-<!---
-<img src="https://github.com/xyMa00/bio_z7/blob/main/Res_ATACseq_all/png/RES_ATACseq_model.png" width="500px">
--->
 
 
 ## Installation  
@@ -26,31 +17,27 @@ Running Ressac on CUDA is recommended if available.
 or download and install
 
 	git clone git@github.com:xyMa00/bio_z7.git
-	cd Res_ATACseq_all
+	cd Ressac
 	python setup.py install
     
 Installation only requires a few minutes.  
 
 ## Data preprocessing
-* First, you can filter based on cells or peaks.
-* Second, you can choose to keep the most variable features.
+* First you need to convert the input data to a .h5ad file(this file should contain 'cell_type' in its obs).
+* Second, you can screen based on cells and peaks, at the same time, you can choose to keep the most variable features.
 * Third, the final number of retained peaks should be the square of some number.
 
-You can refer to **Peaks_fliter_all.py** for the whole process.
+You can refer to **epi_h5ad.py** for the whole process.
 
 
 ## Quick Start
 
 #### Input
-* h5ad file(contains 'cell_type' in its obs).
-
-Reference run python epi_h5ad.py to add 'cell_type'.
-
-    python epi_h5ad.py
+* h5ad file(should contain 'cell_type' in its obs).
 
 #### Run 
 
-    SCALE.py -d [input]
+    Ressac.py -d [input]
 
 #### Output
 Output will be saved in the output folder including:
@@ -63,27 +50,22 @@ Output will be saved in the output folder including:
 #### Imputation  
 Get binary imputed data in adata.h5ad file using scanpy **adata.obsm['binary']** with option **--binary** (recommended for saving storage)
 
-    SCALE.py -d [input] --binary  
+    Ressac.py -d [input] --binary  
     
 or get numerical imputed data in adata.h5ad file using scanpy **adata.obsm['imputed']** with option **--impute**
 
-    SCALE.py -d [input] --impute
+    Ressac.py -d [input] --impute
      
 #### Useful options  
 * save results in a specific folder: [-o] or [--outdir] 
-* embed feature by tSNE or UMAP: [--embed]  tSNE/UMAP
-* filter low quality cells by valid peaks number, default 100: [--min_peaks] 
-* filter low quality peaks by valid cells number, default 5: [--min_cells]
-* filter peaks by selecting highly variable features, default 10%: [--n_feature], disable by [--n_feature] -1.
 * modify the initial learning rate, default is 0.001: [--lr]  
 * change random seed for parameter initialization, default is 18: [--seed]
-* binarize the imputation values: [--binary]
-	
+
 
 #### Help
 Look for more usage of SCALE
 
-	SCALE.py --help 
+	Ressac.py --help 
 
 Use functions in SCALE packages.
 
@@ -92,45 +74,6 @@ Use functions in SCALE packages.
 	from scale.plot import *
 	from scale.utils import *
 	
-#### Running time
-<!---
-<p float="left">
-  <img src="https://github.com/jsxlei/SCALE/wiki/png/runtime.png" width="350" />
-  <img src="https://github.com/jsxlei/SCALE/wiki/png/memory.png" width="350" /> 
-</p>
--->
-
-#### How to generate the required h5ad file from the following files
-* **count matrix file**:  
-	* row is peak and column is barcode, in **txt** / **tsv** (sep=**"\t"**) or **csv** (sep=**","**) format
-* mtx **folder** contains **three files**:   
-	* **count file**: count in **mtx** format, filename contains key word **"count"** / **"matrix"**    
-	* **peak file**: 1-column of peaks **chr_start_end**, filename contains key word **"peak"**  
-	* **barcode file**: 1-column of barcodes, filename contains key word **"barcode"**
-* h5mu file, e.g. filename.h5mu/atac
-
-Reference run 
-
-    python get_h5adFile.py
 
 ## Tutorial
 **[Tutorial Forebrain](https://github.com/xyMa00/bio_z7/wiki/Forebrain)**   Run SCALE on dense matrix **Forebrain** dataset (k=8, 2088 cells)
-
-#### Data availability  
-
-<!---
-* [Forebrain](http://zhanglab.net/SCALE_SOURCE_DATA/Forebrain.h5ad)
-* [Splenocyte](http://zhanglab.net/SCALE_SOURCE_DATA/Splenocyte.h5ad)
-* [mouse_atlas](http://zhanglab.net/SCALE_SOURCE_DATA/mouse_atlas.h5ad)
-* [InSilico](http://zhanglab.net/SCALE_SOURCE_DATA/InSilico.h5ad)
-* [Leukemia](http://zhanglab.net/SCALE_SOURCE_DATA/Leukemia.h5ad)
-* [GM12878vsHEK](http://zhanglab.net/SCALE_SOURCE_DATA/GM12878vsHEK.h5ad)
-* [GM12878vsHL](http://zhanglab.net/SCALE_SOURCE_DATA/GM12878vsHL.h5ad)
-* [Breast_Tumor](http://zhanglab.net/SCALE_SOURCE_DATA/Breast_Tumor.h5ad)
-[Lei Xiong, Kui Xu, Kang Tian, Yanqiu Shao, Lei Tang, Ge Gao, Michael Zhang, Tao Jiang & Qiangfeng Cliff Zhang. SCALE method for single-cell ATAC-seq analysis via latent feature extraction. Nature Communications, (2019).](https://www.nature.com/articles/s41467-019-12630-7)
--->
-
-## Reference
-<!---
-[Lei Xiong, Kui Xu, Kang Tian, Yanqiu Shao, Lei Tang, Ge Gao, Michael Zhang, Tao Jiang & Qiangfeng Cliff Zhang. SCALE method for single-cell ATAC-seq analysis via latent feature extraction. Nature Communications, (2019).](https://www.nature.com/articles/s41467-019-12630-7)
--->

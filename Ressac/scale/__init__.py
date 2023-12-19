@@ -96,14 +96,6 @@ def some_function(
     print(" Ressac: Resnet based single-cell ATAC-seq clustering")
     print("**********************************************************************\n")
 
-    # data = LabelsFile()
-    # print(len(data.labels))
-    # print(data.cluster_num)
-
-    # # ------------------------------------------------------------------------------------------------
-    # data = ForeBrain()
-    # # -----------------------------------------------------------------------------------------------------
-
     adata, trainloader, testloader = load_dataset_new(
         data_list,
         min_genes=min_peaks,
@@ -140,7 +132,6 @@ def some_function(
     decode_dim = []
     dims = [input_dim, latent, encode_dim, decode_dim]
 
-    # model = SCALE(dims, n_centroids=k)
     model = ResNetVAE(input_shape=(s, s, 1), n_centroids=k, dims=dims).to(device)
 
     model = model.to(torch.float)
@@ -149,7 +140,7 @@ def some_function(
         print('\n## Training Model ##')
         model.init_gmm_params(testloader, device)
 
-        model.fit_res_sc_b(adata, trainloader, testloader, batch_size, k,
+        model.fit_res_at_mlp(adata, trainloader, testloader, batch_size, k,
                          lr=lr,
                          verbose=verbose,
                          device=device,
@@ -169,9 +160,7 @@ def some_function(
 
 
     ### output ###
-
     # 1. latent feature
-    # adata.obsm['latent'] = model.encodeBatch(testloader, device=device, out='z')
     adata.obsm['latent'] = model.encodeBatch(testloader, device=device, out='z')
     # print(adata.obsm['latent'])
     # 2. cluster
