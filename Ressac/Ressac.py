@@ -10,9 +10,8 @@
 """
 
 import argparse
-from scale import some_function
+from ressac import some_function
 
-# dataPath='/home/datacenter/MXY/SCALE-master/Forebrain/data.txt'
 # dataPath='GSM4648564_adipose_raw_counts.h5ad'
 # dataPath='Forebrain/data_ED.txt'
 # dataPath='Forebrain/data_tfidf.txt'

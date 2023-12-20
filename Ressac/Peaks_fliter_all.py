@@ -5,15 +5,15 @@ import numpy as np
 import pandas as pd
 import episcanpy.api as epi
 
-# from scale.dataset import *
+# from ressac.dataset import *
 from scipy.io import mmread
-from TFIDF import *
+from .TFIDF import *
 
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import math
-from labels_statistic import *
+from .labels_statistic import *
 from scipy.sparse import issparse, csr_matrix
 
 # 需要自行判断输入前是否需要对矩阵进行转置
@@ -62,7 +62,7 @@ def Clustering_algorithms(adata, savename):
 
 
 if __name__=='__main__':
-    # mt_file = 'F:/SCALE/mouse_atlas/atac_matrix.binary.qc_filtered.mm'
+    # mt_file = 'F:/Ressac/mouse_atlas/atac_matrix.binary.qc_filtered.mm'
     mt_file = 'Mouseatlas_all.mtx'
     # mt_file = 'Mouseatlas_matrix_test.mtx'
     # 读取 .mtx 文件

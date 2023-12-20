@@ -63,17 +63,17 @@ or get numerical imputed data in adata.h5ad file using scanpy **adata.obsm['impu
 
 
 #### Help
-Look for more usage of SCALE
+Look for more usage of Ressac
 
 	Ressac.py --help 
 
-Use functions in SCALE packages.
+Use functions in Ressac packages.
 
-	import scale
-	from scale import *
-	from scale.plot import *
-	from scale.utils import *
+	import ressac
+	from ressac import *
+	from ressac.plot import *
+	from ressac.utils import *
 	
 
 ## Tutorial
-**[Tutorial Forebrain](https://github.com/xyMa00/bio_z7/wiki/Forebrain)**   Run SCALE on dense matrix **Forebrain** dataset (k=8, 2088 cells)
+**[Tutorial Forebrain](https://github.com/xyMa00/bio_z7/wiki/Forebrain)**   Run Ressac on dense matrix **Forebrain** dataset (k=8, 2088 cells)

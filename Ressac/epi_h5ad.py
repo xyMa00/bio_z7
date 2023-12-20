@@ -5,9 +5,9 @@ import numpy as np
 import pandas as pd
 import episcanpy.api as epi
 
-# from scale.dataset import *
+# from ressac.dataset import *
 from scipy.io import mmread
-from TFIDF import *
+from .TFIDF import *
 
 import matplotlib
 matplotlib.use('Agg')
