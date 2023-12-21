@@ -3,24 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e7456909-38cb-477c-85d1-34f100d4a170" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Peaks_fliter_all.py" beforeDir="false" afterPath="$PROJECT_DIR$/Peaks_fliter_all.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResNetAE_pytorch_00.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resnet34_MXY.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ressac.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ressac.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epi_h5ad.py" beforeDir="false" afterPath="$PROJECT_DIR$/epi_h5ad.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scale/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scale/dataset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scale/forebrain.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scale/layer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scale/loss.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scale/model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scale/plot.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scale/specifity.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scale/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seurat.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +23,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="F:/SCALE/SCALE_all" />
+    <property name="last_opened_file_path" value="F:/PyPi/xyMa" />
   </component>
   <component name="RunManager">
     <configuration name="Ressac" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -96,7 +78,8 @@
       <updated>1701134329576</updated>
       <workItem from="1701134348003" duration="299000" />
       <workItem from="1702610756048" duration="19337000" />
-      <workItem from="1702968660816" duration="11909000" />
+      <workItem from="1702968660816" duration="12325000" />
+      <workItem from="1703040465153" duration="213000" />
     </task>
     <servers />
   </component>
@@ -104,42 +87,42 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1702971444534">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1703040566412">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1702971444534" />
-    <state width="1876" height="323" key="GridCell.Tab.0.bottom" timestamp="1703039710627">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1703040566412" />
+    <state width="1876" height="323" key="GridCell.Tab.0.bottom" timestamp="1703040401509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="323" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1703039710627" />
-    <state width="1876" height="323" key="GridCell.Tab.0.center" timestamp="1703039710627">
+    <state width="1876" height="323" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1703040401509" />
+    <state width="1876" height="323" key="GridCell.Tab.0.center" timestamp="1703040401509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="323" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1703039710627" />
-    <state width="1876" height="323" key="GridCell.Tab.0.left" timestamp="1703039710627">
+    <state width="1876" height="323" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1703040401509" />
+    <state width="1876" height="323" key="GridCell.Tab.0.left" timestamp="1703040401509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="323" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1703039710627" />
-    <state width="1876" height="323" key="GridCell.Tab.0.right" timestamp="1703039710627">
+    <state width="1876" height="323" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1703040401509" />
+    <state width="1876" height="323" key="GridCell.Tab.0.right" timestamp="1703040401509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="323" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1703039710627" />
-    <state width="1876" height="377" key="GridCell.Tab.1.bottom" timestamp="1703039152908">
+    <state width="1876" height="323" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1703040401509" />
+    <state width="1876" height="377" key="GridCell.Tab.1.bottom" timestamp="1703040401502">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="377" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1703039152908" />
-    <state width="1876" height="377" key="GridCell.Tab.1.center" timestamp="1703039152908">
+    <state width="1876" height="377" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1703040401502" />
+    <state width="1876" height="377" key="GridCell.Tab.1.center" timestamp="1703040401502">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="377" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1703039152908" />
-    <state width="1876" height="377" key="GridCell.Tab.1.left" timestamp="1703039152907">
+    <state width="1876" height="377" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1703040401502" />
+    <state width="1876" height="377" key="GridCell.Tab.1.left" timestamp="1703040401502">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="377" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1703039152907" />
-    <state width="1876" height="377" key="GridCell.Tab.1.right" timestamp="1703039152908">
+    <state width="1876" height="377" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1703040401502" />
+    <state width="1876" height="377" key="GridCell.Tab.1.right" timestamp="1703040401502">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="377" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1703039152908" />
+    <state width="1876" height="377" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1703040401502" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
