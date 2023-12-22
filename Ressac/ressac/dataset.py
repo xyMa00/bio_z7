@@ -185,20 +185,20 @@ def preprocessing_atac_n(
     if not issparse(adata.X):
         adata.X = scipy.sparse.csr_matrix(adata.X)
 
-    #adata.X[adata.X > 1] = 1
+    adata.X[adata.X > 1] = 1
 
-    if log: log.info('Filtering cells')
-    sc.pp.filter_cells(adata, min_genes=min_genes)
-    print(adata)
-    if log: log.info('Filtering genes')
-    # if min_cells < 1:
-    #     min_cells = min_cells * adata.shape[0]
-    sc.pp.filter_genes(adata, min_cells=min_cells)
-    print(adata)
-    if n_top_genes != -1:
-        if log: log.info('Finding variable features')
-        # sc.pp.highly_variable_genes(adata, n_top_genes=n_top_genes, inplace=False, subset=True)
-        adata = epi.pp.select_var_feature(adata, nb_features=n_top_genes, show=False, copy=True)
+    # if log: log.info('Filtering cells')
+    # sc.pp.filter_cells(adata, min_genes=min_genes)
+    # print(adata)
+    # if log: log.info('Filtering genes')
+    # # if min_cells < 1:
+    # #     min_cells = min_cells * adata.shape[0]
+    # sc.pp.filter_genes(adata, min_cells=min_cells)
+    # print(adata)
+    # if n_top_genes != -1:
+    #     if log: log.info('Finding variable features')
+    #     # sc.pp.highly_variable_genes(adata, n_top_genes=n_top_genes, inplace=False, subset=True)
+    #     adata = epi.pp.select_var_feature(adata, nb_features=n_top_genes, show=False, copy=True)
 
     # if log: log.infor('Normalizing total per cell')
     # sc.pp.normalize_total(adata, target_sum=target_sum)
@@ -375,6 +375,15 @@ def load_dataset_new(
     if 'batch' not in adata.obs:
         adata.obs['batch'] = 'batch'
     adata.obs['batch'] = adata.obs['batch'].astype('category')
+
+    adata = preprocessing_atac_n(
+        adata,
+        min_genes=min_genes,
+        min_cells=min_cells,
+        n_top_genes=n_top_genes,
+        chunk_size=chunk_size,
+        log=log,
+    )
 
     scdata = SingleCellDataset(adata)  # Wrap AnnData into Pytorch Dataset
     trainloader = DataLoader(
