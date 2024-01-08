@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e7456909-38cb-477c-85d1-34f100d4a170" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ressac/ResNetAE_pytorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/ressac/ResNetAE_pytorch.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +24,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="F:/SCALE/SCALEX-main" />
   </component>
   <component name="RunManager">
     <configuration name="Ressac" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -80,6 +81,9 @@
       <workItem from="1702610756048" duration="19337000" />
       <workItem from="1702968660816" duration="12325000" />
       <workItem from="1703040465153" duration="213000" />
+      <workItem from="1703234021510" duration="5264000" />
+      <workItem from="1703728330689" duration="599000" />
+      <workItem from="1704167526948" duration="3944000" />
     </task>
     <servers />
   </component>
@@ -87,10 +91,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1703040566412">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1704265404093">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1703040566412" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1704265404093" />
     <state width="1876" height="377" key="GridCell.Tab.0.bottom" timestamp="1703234145420">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -141,6 +145,11 @@
           <url>file://$PROJECT_DIR$/ressac/ResNetAE_pytorch.py</url>
           <line>220</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ressac/__init__.py</url>
+          <line>106</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

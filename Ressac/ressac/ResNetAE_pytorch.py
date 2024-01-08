@@ -499,7 +499,7 @@ class ResNetVAE(torch.nn.Module):
                     # print(f'ari_max:{ari}, nmi:{nmi}, f1:{f1}, epoch:{epoch}, with time:{elapsed_time} s.\n')
                     print(f'kmeans_ari: {ari_kmeans}, with time:{elapsed_time} s.')
 
-                    if ari_kmeans > ari_kmeans_max:
+                    if ari_louvain > ari_louvain_max:
                         ari_louvain_max = ari_louvain
                         ari_leiden_max = ari_leiden
                         ari_kmeans_max = ari_kmeans
@@ -512,6 +512,7 @@ class ResNetVAE(torch.nn.Module):
                             save = '.png'
                             # torch.save(self.state_dict(), os.path.join(outdir, 'model_'+str(epoch)+'.pt'))  # save model
                             torch.save(self.state_dict(), os.path.join(outdir, 'model.pt'))  # save model
+                            adata.write(outdir + 'adata.h5ad', compression='gzip')
                             # print(adata)
                             # ----------------------------UMAP---------------------------------
                             sc.tl.umap(adata, min_dist=0.1)
@@ -539,7 +540,7 @@ class ResNetVAE(torch.nn.Module):
                             sc.pl.tsne(adata, color=color, save='_kmeans'+save, show=False, wspace=0.4,
                                        ncols=4)
                 print(
-                    f'ari_louvain_then:{ari_louvain_max}, then ari_leiden:{ari_leiden_max}, ari_kmeans_max:{ari_kmeans_max}, epoch:{epoch_max}.\n')
+                    f'ari_louvain_max:{ari_louvain_max}, then ari_leiden:{ari_leiden_max}, ari_kmeans:{ari_kmeans_max}, epoch:{epoch_max}.\n')
 
 
 
