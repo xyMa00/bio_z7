@@ -477,6 +477,7 @@ class ResNetVAE(torch.nn.Module):
                     # print(adata)
                     # louvain算法
                     epi.tl.louvain(adata)
+                    epi.tl.getNClusters(adata, n_cluster=k)
                     ari_louvain = epi.tl.ARI(adata, 'louvain', 'cell_type')
                     print(f'louvain_ari: {ari_louvain}.\n')
 
@@ -484,6 +485,7 @@ class ResNetVAE(torch.nn.Module):
                     # epi.pp.lazy(adata)
                     # print(adata)
                     epi.tl.leiden(adata)
+                    epi.tl.getNClusters(adata, n_cluster=k)
                     ari_leiden = epi.tl.ARI(adata, 'leiden', 'cell_type')
                     print(f'leiden_ari: {ari_leiden}.\n')
 

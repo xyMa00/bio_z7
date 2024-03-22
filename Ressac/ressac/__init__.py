@@ -122,8 +122,8 @@ def some_function(
 
     print("\n======== Parameters ========")
     print(
-        'Cell number: {}\nPeak number: {}\ndevice: {}\nlr: {}\nbatch_size: {}\ncell filter by peaks: {}\npeak filter by cells: {}'.format(
-            cell_num, input_dim, device, lr, batch_size, min_peaks, min_cells))
+        'Cell number: {}\nPeak number: {}\ndevice: {}\nlr: {}\nbatch_size: {}\ncell filter by peaks: {}\npeak filter by cells: {}\nn_centroids: {}'.format(
+            cell_num, input_dim, device, lr, batch_size, min_peaks, min_cells, k))
     print("============================")
 
     latent = 10

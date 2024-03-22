@@ -24,7 +24,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="F:/SCALE/SCALEX-main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Ressac" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -84,6 +84,7 @@
       <workItem from="1703234021510" duration="5264000" />
       <workItem from="1703728330689" duration="599000" />
       <workItem from="1704167526948" duration="3944000" />
+      <workItem from="1709694957453" duration="7000" />
     </task>
     <servers />
   </component>
